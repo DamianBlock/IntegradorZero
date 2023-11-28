@@ -16,8 +16,8 @@ import jakarta.persistence.Persistence;
             EntityManager em = getEntityManager();
             EntityTransaction tx = em.getTransaction();
             tx.begin();
-           Operador operador = new Operador(); //← Seteamos todos los atributos
-            em.persist(operador.setNombreOperador(operador.setNombreOperador("Juan")));
+           /* Operador operador = new Operador(); //← Seteamos todos los atributos
+            em.persist(operador.setNombreOperador("Juan")); */
             Cliente cliente = new Cliente();
             em.persist(cliente);
             tx.commit();

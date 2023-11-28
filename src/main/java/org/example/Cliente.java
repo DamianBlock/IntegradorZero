@@ -45,4 +45,60 @@ public class Cliente {
     private Date fechaNacCliente;
 
 
+    public int getIdCliente() {
+        return idCliente;
+    }
+
+    public void setIdCliente(int idCliente) {
+        this.idCliente = idCliente;
+    }
+
+    public String getRazonSocial() {
+        return razonSocial;
+    }
+
+    public Object setRazonSocial(String razonSocial) {
+        this.razonSocial = razonSocial;
+        return null;
+    }
+
+    public int getCuitCliente() {
+        return cuitCliente;
+    }
+
+    public void setCuitCliente(int cuitCliente) {
+        this.cuitCliente = cuitCliente;
+    }
+
+    public int getCuilCliente() {
+        return cuilCliente;
+    }
+
+    public void setCuilCliente(int cuilCliente) {
+        this.cuilCliente = cuilCliente;
+    }
+
+    public int getEmailCliente() {
+        return emailCliente;
+    }
+
+    public void setEmailCliente(int emailCliente) {
+        this.emailCliente = emailCliente;
+    }
+
+    public int getTelefonoCliente() {
+        return telefonoCliente;
+    }
+
+    public void setTelefonoCliente(int telefonoCliente) {
+        this.telefonoCliente = telefonoCliente;
+    }
+
+    public Date getFechaNacCliente() {
+        return fechaNacCliente;
+    }
+
+    public void setFechaNacCliente(Date fechaNacCliente) {
+        this.fechaNacCliente = fechaNacCliente;
+    }
 }
