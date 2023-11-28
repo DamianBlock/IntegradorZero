@@ -20,6 +20,6 @@ import jakarta.persistence.Persistence;
         em.persist(empleado);*/
             tx.commit();
 
-            System.out.println("Prueba");
+            System.out.println("\n Conexión establecida");
         }
     }
