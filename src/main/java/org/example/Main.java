@@ -16,8 +16,10 @@ import jakarta.persistence.Persistence;
             EntityManager em = getEntityManager();
             EntityTransaction tx = em.getTransaction();
             tx.begin();
-/*        Empleado empleado = new Empleado(); //← Seteamos todos los atributos
-        em.persist(empleado);*/
+           Operador operador = new Operador(); //← Seteamos todos los atributos
+            em.persist(operador.setNombreOperador(operador.setNombreOperador("Juan")));
+            Cliente cliente = new Cliente();
+            em.persist(cliente);
             tx.commit();
 
             System.out.println("\n Conexión establecida");

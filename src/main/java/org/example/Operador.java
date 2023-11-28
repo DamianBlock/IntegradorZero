@@ -14,6 +14,7 @@ import java.util.List;
 @Table(name = "OPERADOR")
 
 public class Operador {
+
     @Id
     @Column(name = "idOPERADOR")
     @GeneratedValue(strategy= GenerationType.IDENTITY)
@@ -35,6 +36,52 @@ public class Operador {
     @OneToMany
     private List<Incidente> incidentes;
 
+    public int getIdOperador() {
+        return idOperador;
+    }
 
+    public void setIdOperador(int idOperador) {
+        this.idOperador = idOperador;
+    }
 
+    public String getNombreOperador() {
+        return nombreOperador;
+    }
+
+    public String setNombreOperador(String nombreOperador) {
+        this.nombreOperador = nombreOperador;
+        return nombreOperador;
+    }
+
+    public String getApellidoOperador() {
+        return apellidoOperador;
+    }
+
+    public void setApellidoOperador(String apellidoOperador) {
+        this.apellidoOperador = apellidoOperador;
+    }
+
+    public String getDomicilioOperador() {
+        return domicilioOperador;
+    }
+
+    public void setDomicilioOperador(String domicilioOperador) {
+        this.domicilioOperador = domicilioOperador;
+    }
+
+    public double getTelefonoOperador() {
+        return telefonoOperador;
+    }
+
+    public void setTelefonoOperador(double telefonoOperador) {
+        this.telefonoOperador = telefonoOperador;
+    }
+
+    public List<Incidente> getIncidentes() {
+        return incidentes;
+    }
+
+    public void setIncidentes(List<Incidente> incidentes) {
+        this.incidentes = incidentes;
+    }
 }
