@@ -22,6 +22,16 @@ import jakarta.persistence.Persistence;
             em.persist(cliente);
             tx.commit();
 
+
+            /*  Cliente c1 = new Cliente();
+            c1.setDniCliente(34310152);
+            c1.setNombreYApellidoCliente("Alan Casas");
+            c1.setDireccionCliente("avenida falsa 123");
+            c1.setLocalidadCliente("Bs.As");
+
+            clienteRepositorioImp.agregarCliente(c1);
+            */
+
             System.out.println("\n Conexión establecida");
         }
     }

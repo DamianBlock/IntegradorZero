@@ -33,6 +33,9 @@ public class Operador {
     @Column(name ="telefono")
     private double telefonoOperador;
 
+    @Column(name ="email")
+    private String emailOperador;
+
     @OneToMany
     private List<Incidente> incidentes;
 
