@@ -30,8 +30,8 @@ import jakarta.persistence.Persistence;
             c1.setLocalidadCliente("Bs.As");
 
             clienteRepositorioImp.agregarCliente(c1);
-            */
 
-            System.out.println("\n Conexión establecida");
+*/
+            System.out.println("\n Conexión establecida con exito");
         }
     }
