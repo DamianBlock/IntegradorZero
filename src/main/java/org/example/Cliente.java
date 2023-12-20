@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDate;
 import java.util.Date;
 import java.util.List;
 
@@ -30,19 +31,21 @@ public class Cliente {
     private String razonSocial;
 
     @Column(name = "cuit")
-    private int cuitCliente;
+    private String cuitCliente;
 
     @Column(name = "CUIL")
-    private int cuilCliente;
+    private String cuilCliente;
 
     @Column(name = "email")
-    private int emailCliente;
+    private String emailCliente;
 
     @Column(name = "telefono")
-    private int telefonoCliente;
+    private long telefonoCliente;
 
     @Column(name = "Fecha_Nacimiento")
     private Date fechaNacCliente;
+
+
 
 
     public int getIdCliente() {
@@ -62,35 +65,35 @@ public class Cliente {
         return null;
     }
 
-    public int getCuitCliente() {
+    public String getCuitCliente() {
         return cuitCliente;
     }
 
-    public void setCuitCliente(int cuitCliente) {
+    public void setCuitCliente(String cuitCliente) {
         this.cuitCliente = cuitCliente;
     }
 
-    public int getCuilCliente() {
+    public String getCuilCliente() {
         return cuilCliente;
     }
 
-    public void setCuilCliente(int cuilCliente) {
+    public void setCuilCliente(String cuilCliente) {
         this.cuilCliente = cuilCliente;
     }
 
-    public int getEmailCliente() {
+    public String getEmailCliente() {
         return emailCliente;
     }
 
-    public void setEmailCliente(int emailCliente) {
+    public void setEmailCliente(String emailCliente) {
         this.emailCliente = emailCliente;
     }
 
-    public int getTelefonoCliente() {
+    public double getTelefonoCliente() {
         return telefonoCliente;
     }
 
-    public void setTelefonoCliente(int telefonoCliente) {
+    public void setTelefonoCliente(long telefonoCliente) {
         this.telefonoCliente = telefonoCliente;
     }
 
@@ -101,4 +104,8 @@ public class Cliente {
     public void setFechaNacCliente(Date fechaNacCliente) {
         this.fechaNacCliente = fechaNacCliente;
     }
+
+ /*   public void setFechaNacCliente(LocalDate parse) {
+        this.fechaNacCliente = fechaNacCliente;
+    }*/
 }
