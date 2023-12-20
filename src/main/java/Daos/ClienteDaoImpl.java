@@ -1,8 +1,10 @@
-package org.example;
+package Daos;
 
 import jakarta.persistence.EntityManager;
+import Daos.ClienteDao;
+import org.example.Cliente;
 
-public class ClienteDaoImpl implements ClienteDao{
+public class ClienteDaoImpl implements ClienteDao {
 
     public ClienteDaoImpl(EntityManager entityManager) {
         this.entityManager = entityManager;

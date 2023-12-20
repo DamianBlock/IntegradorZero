@@ -1,4 +1,6 @@
-package org.example;
+package Repositories;
+
+import org.example.Cliente;
 
 public interface ClienteRepository {
 

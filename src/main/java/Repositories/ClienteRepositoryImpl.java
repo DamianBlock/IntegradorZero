@@ -1,6 +1,9 @@
-package org.example;
+package Repositories;
 
-public class ClienteRepositoryImpl implements ClienteRepository{
+import org.example.Cliente;
+import Daos.ClienteDaoImpl;
+
+public class ClienteRepositoryImpl implements ClienteRepository {
     private ClienteDaoImpl clienteDao;
     @Override
     public void add(Cliente cliente) {

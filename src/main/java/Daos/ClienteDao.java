@@ -1,4 +1,6 @@
-package org.example;
+package Daos;
+
+import org.example.Cliente;
 
 public interface ClienteDao {
 
