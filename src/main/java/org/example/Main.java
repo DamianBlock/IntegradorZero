@@ -25,7 +25,7 @@ public class Main {
 
 
             tx.begin();
-            DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+            DateTimeFormatter fmt = DateTimeFormatter.ofPattern("yyyy/MM/dd");
            /* Operador operador = new Operador(); //← Seteamos todos los atributos
             em.persist(operador.setNombreOperador("Juan")); */
           //  Cliente cliente = new Cliente(100, "1000",50, "Damian Juarez",156171541,2033973560,"damianfrt25@gmail.com");
@@ -34,9 +34,8 @@ public class Main {
             cliente.setRazonSocial("Damian Juarez");
             cliente.setEmailCliente("damianfrt25@gmail.com");
             cliente.setTelefonoCliente(1516171541);
-            cliente.setFechaNacCliente(new Date(1988-05));
+           // cliente.setFechaNacCliente(1988-5-08);
             em.persist(cliente);
-
 
             tx.commit();
 
